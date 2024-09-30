@@ -101,7 +101,7 @@ def index():
             'name': name_to_search
         }
 
-    return render_template('fuzzy_layout.html', result=result, df=df)
+    return render_template('index.html', result=result, df=df)
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001)
